@@ -3,16 +3,18 @@
 Material for an invited lecture by **Gonzalo Uribarri** (Stockholm University) at ITBA (Instituto Tecnológico de
 Buenos Aires), in a neuroscience course.
 
-**Topics:** what makes a time series different from other data; the tasks we ask of neural time series
-(classification, forecasting, embedding, clustering, inferring a graph); strategies for EEG/MEG, fMRI and spike
+**Topics:** what makes a time series different from other data; the two tasks we ask of neural time series
+(PREDICT: classify or regress; REPRESENT: embed or cluster); the two ways to build a model (hand-made features vs
+features learned from data, with random features such as ROCKET in between); examples with EEG/MEG, fMRI and spike
 data; and how to check that a model really learned what we think it learned.
 
 ## Contents
 
 | Path | What |
 |---|---|
-| `notebook/` | The Google Colab notebook for the hands-on part (added before the lecture) |
-| `data/` | Small, precomputed data files the notebook downloads (see below) |
+| `slides/ml_neural_ts.pdf` | The lecture slides (PDF, 93 pages: the lecture, then an appendix with backup slides and the full references) |
+| `notebook/` | The Google Colab notebook for the hands-on part |
+| `data/` | Small, precomputed data files (see below). The notebook uses `fmri_development_msdl.npz` and, only if the PhysioNet copy cannot be reached, `eoec_features.npz`; the others were made for the lecture's examples and figures and are kept for reuse |
 
 ## Data files and licences
 
@@ -37,7 +39,8 @@ c518551bc668be8b5c681fc53e55504b11fbb45f2dbf5ad8f8a007c8c19a2bd1  sleep8_feat.np
 77585aba3306072d205a323755bb0fffb32a0a441e81a116d4c400567bc33413  achilles_dandi000044_maze_25ms.npz
 ```
 
-## Code licence
+## Licences
 
 Code in this repository (the notebook) is released under the MIT licence (`LICENSE`). Data files keep the
-licences listed above.
+licences listed above. Figures by other authors in the slides are credited on each slide and keep their own
+licences.
